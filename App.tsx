@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import TrainingWizard from './components/TrainingWizard';
-import MetronomeRecorder from './components/MetronomeRecorder';
-import MidiExporter from './components/MidiExporter';
-import { classifyAudio, loadModel } from './services/classifier';
+import TrainingWizard from './TrainingWizard';
+import MetronomeRecorder from './MetronomeRecorder';
+import MidiExporter from './MidiExporter';
+import { classifyAudio, loadModel } from './classifier';
 
 export default function App() {
   const [detections, setDetections] = useState<{ label: string; time: number }[]>([]);

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useRecorder } from '../hooks/useRecorder';
+import { useRecorder } from './useRecorder';
 
 const steps = [
   { id: 'kick', label: 'Kick', instructions: 'Make your kick sound (e.g., "buh")' },

@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { useRecorder } from '../hooks/useRecorder';
+import { useRecorder } from './useRecorder';
 
 export default function MetronomeRecorder({ onFinish }: { onFinish: (blob: Blob) => void }) {
   const { recording, audioURL, start, stop } = useRecorder();
